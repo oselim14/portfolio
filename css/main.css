@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: black;
-    color: #78D6FF; 
+    background-color: black !important;
+    color: #78D6FF !important; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,8 +25,109 @@ nav h1{
     margin: 15vmin;
 }
 
-.projects {
-    height: 100%;
+.project-cards > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    margin: 4vw;
+}
+
+.projects-header{
+    text-align: center;
+}
+
+.inner {
+    padding-top: 20px;
+}
+
+.header {
+    text-align: center;
+    color:#78D6FF;
+    padding: 1rem;
+    position: relative;
+}
+
+.header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #78D6FF;
+}
+
+.skill-box:hover > .skill-title:after > .skill-box:hover > .skill-title:before{
+    width: 35px;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #78D6FF;
+    transition: 0.5s; 
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-title h3 {
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 76vw;
 }
 
 @media screen and (min-width: 789px) {

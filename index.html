@@ -7,66 +7,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script defer src="js/main.js"></script>
 </head>
-<nav class="header">
+<!-- <nav class="header">
     <a href="#aboutheader">About Me</a>
     <h1>Skills</h1>
     <h1>Projects</h1>
     <h1>Contact</h1>
-</nav>
+</nav> -->
 <body>
     <h1 class="name-header">Tavi Selim</h1>
     <div class="aboutme">
     <h1 class="about-header">About Me</h1>
-    <a name="#aboutheader"></a>
     <p>I am a software engineer with a background in Kinesiology, and health care. I have experience assisting a variety
         of people while maintaining adaptability and exceeding my goals. I excel in a fast paced and collaborative
         environment. I aim to constantly learn and improve.</p>
     </div>
-    <div class="skills">
-    <h1 class="skills-header">Skills</h1>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Django</li>
-        <li>jQuery</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-        <li>RESTful API's</li>
-        <li>GitHub</li>
-        <li>Mongoose</li>
-        <li>Heroku</li>
-        <li>Bootstrap</li>
-        <li>Responsive Design</li>
-    </ul>
+    <div class="inner">
+        <div class="header">
+            <h1>My Skills</h1>
+        </div>
+        <div class="container">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1920px-HTML5_logo_and_wordmark.svg.png" alt="html" class="skill-icon">
+                    </div>
+                    <h3>HTML 5</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/240px-CSS3_logo_and_wordmark.svg.png" alt="css" class="skill-icon">
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://www.clipartmax.com/png/middle/150-1504620_javascript-logo.png" alt="JS" class="skill-icon">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://mpng.subpng.com/20180811/pul/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg" alt="Python" class="skill-icon">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="React" class="skill-icon">
+                    </div>
+                    <h3>React</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-WSFKtHUvpN70oho_xwzal1CmdUfM_VP0Q&usqp=CAU" alt="Nodejs" class="skill-icon">
+                    </div>
+                    <h3>Node.js</h3>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="projects">
+    <div class="project-cards">
         <h1 class="projects-header">Projects</h1>
-        <div class="mancala">
-            <a href="https://oselim14.github.io/Mancala/">Mancala</a>
-            <p>Mancala is an HTML 5 browser based game, with CSS for presentation and JavaScript for game logic.
-                Mancala allows the user to play this classic game against a randomly generated computer or a friend from the
-                same device. It has responsive design, and will fit any screen size it is displayed on.</p>
-        </div>
-        <!-- <img src="https://i.imgur.com/WMEpTOM.png" alt="pokemon" /> -->
-        <div class="monsters">
-            <a href="https://pocket-monsters.herokuapp.com/">Pocket Monsters</a>
-            <p>Pocket Monsters is a full-stack application using NodeJS, Express and MongoDB, as well as a third party
-                API to create a database that allows users to search for Pokemon information and store the information in their
-                individual account.</p>
-        </div>
-        <!-- <img src="https://i.imgur.com/kljmPIE.png" alt="films" /> -->
-        <div class="flix">
-            <a href="http://films-and-flix.herokuapp.com/">Films&Flix</a>
-            <p>Films&Flix is a website that allows users to search for movies, and review the movies. The movie search pulls
-                information about the movie from the IMDb API and allows the user to see title, directors, writers, cast, etc.
-                Users are then able to leave a review on the movie, and see other reviews for the movie as well. As a visitor,
-                they can also search movies and see details, visitors are only not able to create reviews. </p>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.imgur.com/RMiV9HR.png" class="card-img-top" alt="mancala">
+                <div class="card-body">
+                    <p class="card-text">Mancala is an HTML 5 browser based game, with CSS for presentation and JavaScript for game logic.
+                        Mancala allows the user to play this classic game against a randomly generated computer or a friend from the
+                        same device. It has responsive design, and will fit any screen size it is displayed on.</p>
+                    <a href="https://oselim14.github.io/Mancala/">Mancala</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.imgur.com/WMEpTOM.png" class="card-img-top" alt="monsters">
+                <div class="card-body">
+                    <p>Pocket Monsters is a full-stack application using NodeJS, Express and MongoDB, as well as a third party
+                        API to create a database that allows users to search for Pokemon information and store the information in their
+                        individual account.</p>
+                    <a href="https://pocket-monsters.herokuapp.com/">Pocket Monsters</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.imgur.com/kljmPIE.png" class="card-img-top" alt="films" />
+                <div class="card-body">
+                    <p>Films&Flix is a website that allows users to search for movies, and review the movies. The movie search pulls
+                        information about the movie from the IMDb API and allows the user to see title, directors, writers, cast, etc.
+                        Users are then able to leave a review on the movie, and see other reviews for the movie as well. As a visitor,
+                        they can also search movies and see details, visitors are only not able to create reviews. </p>
+                    <a href="http://films-and-flix.herokuapp.com/">Films&Flix</a>
+            </div>
         </div>
     </div>
     <h1 class="contact-header">Contact</h1>
