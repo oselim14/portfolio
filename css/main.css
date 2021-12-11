@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #78D6FF; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}  
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85%;
+    background-color: black;
+}
+
+nav h1{
+    margin: 15vmin;
+}
+
+.projects {
+    height: 100%;
+}
+
+@media screen and (min-width: 789px) {
+    .header.sticky{
+        position: fixed;
+        padding: 6px;
+        transition: all 0.4s ease;
+        top: 0;
+        width: 98%;
+        justify-content: space-evenly;
+        height: 15vh;
+    }
+      
+}
