@@ -130,15 +130,29 @@ nav h1{
     width: 76vw;
 }
 
-@media screen and (min-width: 789px) {
-    .header.sticky{
-        position: fixed;
-        padding: 6px;
-        transition: all 0.4s ease;
-        top: 0;
-        width: 98%;
-        justify-content: space-evenly;
-        height: 15vh;
-    }
-      
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner {
+    width: 60vw;
+    display: flex;
+    justify-content: left;
+    margin-left: 10vw;
+    margin-bottom: 25vh;
+}
+
+.img-banner {
+    display: flex;
+    justify-self: left;
+    width: 100vw;
 }
