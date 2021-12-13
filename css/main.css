@@ -17,8 +17,11 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 85%;
-    background-color: black;
+    border-radius: 12px;
+    width: 98%;
+    background-color: #78D6FF;
+    z-index: 3;
+    position: relative;
 }
 
 nav h1{
@@ -46,19 +49,7 @@ nav h1{
 .header {
     text-align: center;
     color:#78D6FF;
-    padding: 1rem;
     position: relative;
-}
-
-.header:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 100px;
-    background-color: black;
 }
 
 .container{
@@ -130,6 +121,10 @@ nav h1{
     width: 76vw;
 }
 
+.about-header {
+    margin-bottom: 10vmin;
+}
+
 .contact-header {
     display: flex;
     flex-direction: column;
@@ -139,8 +134,27 @@ nav h1{
 
 .links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 25vh;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none !important;
+    color: white;
+    background-color: #78D6FF;
+    border-radius: 12px;
+    margin: 2vmin;
+}
+
+.links > a {
+    text-decoration: none !important;
+    color: white;
+    background-color: #78D6FF;
+    padding: 2vmin;
+    border-radius: 12px;
+    margin: 5vmin;
 }
 
 .banner {
@@ -155,4 +169,22 @@ nav h1{
     display: flex;
     justify-self: left;
     width: 100vw;
+}
+
+@media screen and (min-width: 789px) {
+    .header.sticky{
+        position: fixed;
+        transition: all 0.4s ease;
+        top: 0;
+        width: 98%;
+        justify-content: space-evenly;
+    }
+      
+}
+
+@media screen and (max-width: 768px) {
+    Nav{
+        display: flex;
+        flex-direction: column;
+    }
 }
