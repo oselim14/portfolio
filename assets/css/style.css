@@ -433,7 +433,7 @@ section {
 .hex {
   display: flex;
   position: relative;
-  width: 200px;
+  width: 185px !important;
   height: 185px;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
